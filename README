@@ -1,0 +1,19 @@
+ChatServ v0.5
+
+I do not know exactly where I pulled the original source. It’s been modified to fit
+the use as described below. I may revisit this program at a later date.
+
+This server is designed for small scale use for private chat clients. The server is only
+a repeater of the data between the clients. While ChatServ does echo the comm data
+to the console, it does not log any information (data, connections, timestamps, etc). 
+
+This was meant to be a lightweight server that keeps no logs of the data or conversations
+between each client. It allows rebroadcast to every node. The chat client is the workhorse
+of the network and determines which messages to drop, display, encrypt, etc. etc.
+
+While this is an unusual way to handle traffic, the end project is only meant for 
+point-to-point encrypted conversations. A participent must have the correct 
+encryption keys to view the conversation. It also prevents logging on the remote
+server.
+
+B Greg Colburn
